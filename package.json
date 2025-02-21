@@ -1,0 +1,30 @@
+{
+  "name": "icn-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@feathersjs/authentication-client": "^5.0.9",
+    "@feathersjs/client": "^5.0.9",
+    "@feathersjs/rest-client": "^5.0.9",
+    "axios": "^1.5.1",
+    "moment": "^2.29.4",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-hook-form": "^7.47.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "@types/react": "^18.2.24",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "typescript": "latest"
+  }
+}
