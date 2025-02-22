@@ -18,6 +18,7 @@ const useLogin = () => {
           toast.success("Inicio de sesión exitoso 🎉");
       })
       .catch((err) => {
+          console.log(err)
           toast.error("Error al iniciar sesión ❌", err?.message);
       });
     }
