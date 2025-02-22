@@ -1,6 +1,8 @@
 import { authenticationService } from "@/api"
 import { useAuthContext } from "@/auth"
 import { useRouter } from "next/navigation"
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const useLogin = () => {
     const router = useRouter()
@@ -9,14 +11,15 @@ const useLogin = () => {
     const handleLogin = async (payload: any) => {
       const data = {
         ...payload,
-        email: payload.dni,
-        strategy: "local"
+        strategy: "patient"
       }
         await authenticationService.login(data).then((res) => {
-          login(res.user, res.accessToken)
-        }).catch((err) => {
-          console.log(err)
-        })
+          login(res.user, res.accessToken);
+          toast.success("Inicio de sesión exitoso 🎉");
+      })
+      .catch((err) => {
+          toast.error("Error al iniciar sesión ❌", err?.message);
+      });
     }
 
   return { handleLogin }

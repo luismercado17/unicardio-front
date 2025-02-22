@@ -135,11 +135,10 @@ table {
   width: 100%;
   text-align: center;
   border-spacing: 0px;
-  border: 0.5px solid #f02b37;
 }
 
 thead {
-  background: #f02b37;
+  background: #000000;
   color: white;
 }
 
@@ -148,8 +147,18 @@ th, td {
 }
 
 body tr td{
-  border: 0.5px solid #f02b37;
+  border: 0.5px solid #000000;
 }
+
+tbody tr td{
+  color: #313030;
+}
+
+tbody tr td a{
+  text-decoration: underline;
+  color: blue !important;
+}
+
 
 tbody tr:nth-child(even) {
   background: #9cd5e347;

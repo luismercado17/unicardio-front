@@ -17,7 +17,8 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-hook-form": "^7.47.0"
+    "react-hook-form": "^7.47.0",
+    "react-toastify": "^11.0.3"
   },
   "devDependencies": {
     "@types/node": "^20.8.2",
