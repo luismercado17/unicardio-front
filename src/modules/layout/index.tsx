@@ -10,7 +10,7 @@ export default function ContentLayout({ children }: { children: React.ReactNode 
             <header>
                 <div>
                     <div/>
-                    <a href='https://icnsalud.com/'>
+                    <a href='#'>
                         <img style={{maxWidth: 200, width: 300, height: 100, objectFit: 'cover'}} src='/img/logo.png'/>
                     </a>
                     <a style={{cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 10}} type="link" onClick={() => {

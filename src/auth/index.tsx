@@ -67,7 +67,7 @@ const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
         localStorage.removeItem(TOKEN_NAME());
         setIsAuth(false);
         setUser(null);
-        router.push("https://icnsalud.com/");
+        router.push("https://main.d2yufm59thfa1b.amplifyapp.com/login");
     };
     
     const authFromToken = () => {

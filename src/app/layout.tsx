@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <Head>
-        <title>ICN Salud</title>
+        <title>Unicardio Caribe</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <body className={inter.className}>
