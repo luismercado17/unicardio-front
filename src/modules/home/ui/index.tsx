@@ -47,7 +47,7 @@ export default function HomeModule() {
         </table>
         ) : (
             <div className="no_product">
-                <p>:( Aun no tienes resultados</p>
+                <p style={{color: 'black'}}>:( Aun no tienes resultados</p>
             </div>
         )}
         </main>
